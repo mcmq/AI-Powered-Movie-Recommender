@@ -7,8 +7,6 @@ import { ScrollArea } from "./ui/scroll-area"
 import StarRating from "./star-rating"
 import { Button } from "./ui/button"
 
-type Props = {}
-
 export default function MovieCard({ poster_path, backdrop_path, title, genre_ids, overview, vote_average }: Movie) {
   return (
     <Sheet>

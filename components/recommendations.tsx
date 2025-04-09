@@ -1,8 +1,6 @@
-import React from 'react'
+import React from "react"
 
-type Props = {}
-
-export default function Recommendations({}: Props) {
+export default function Recommendations() {
   return (
     <div>Recommendations</div>
   )

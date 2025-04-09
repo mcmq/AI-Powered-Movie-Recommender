@@ -5,9 +5,7 @@ import React from "react"
 import { Button } from "./ui/button"
 import { ChevronLeft } from "lucide-react"
 
-type Props = {}
-
-export default function PreviousPageButton({}: Props) {
+export default function PreviousPageButton() {
   const searchParams = useSearchParams()
   const pathname = usePathname()
   const { replace } = useRouter()
