@@ -8,11 +8,11 @@ import Link from "next/link"
 import { cn } from "@/lib/utils"
 
 type Props = {
-  searchParams?: { [key: string]: string | string[] | undefined }
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
 export default async function Home({ searchParams }: Props) {
-  const data = await fetchMovies({ page: Number(searchParams?.page || 1) })
+  const data = await fetchMovies({ page: Number((await searchParams)?.page || 1) })
 
   if (!data.success)
     return console.log(data.error)

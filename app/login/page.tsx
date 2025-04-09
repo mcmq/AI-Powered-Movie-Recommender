@@ -1,8 +1,8 @@
 import React from "react"
 
-type Props = {}
+// type Props = {}
 
-export default function LoginPage({}: Props) {
+export default function LoginPage(/* {}: Props*/) {
   return (
     <div>page</div>
   )

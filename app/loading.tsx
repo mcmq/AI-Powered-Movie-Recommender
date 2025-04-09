@@ -1,8 +1,6 @@
-import React from 'react'
+import React from "react"
 
-type Props = {}
-
-export default function LoadingPage({}: Props) {
+export default function LoadingPage() {
   return (
     <div>LoadingPage</div>
   )
